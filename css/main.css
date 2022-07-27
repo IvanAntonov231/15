@@ -80,9 +80,7 @@ display:inline-block;
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4,400px);
-    grid-column-gap: -100px;
     margin-left: 150px;
-    align-items: center;
 }
 .card-img-top{
     max-height: 166px

@@ -25,5 +25,54 @@
 .nav{
     padding-left: 300px;
 }
-.bi{
+.accordion-button::after {
+display:inline-block;
+  width:30px;
+  height:30px;
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    #000;
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+.tab-button{
+    height: 50px;
+    width: 70px;
+    margin-top: 20px;
+    background-color: black;
+    margin-left: 300px;
+    color: white;
+}
+.tab-button:hover{
+    opacity: 60%;
+}
+.tab-button1{
+    background-color: blue;
+}
+.tab-button2{
+    background-color: coral;
+}
+.tab-button3{
+    background-color: violet;
+}
+.tab-button4{
+    background-color: slateblue;
+}
+.callback_form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+}
+.callback{
+    margin-left: 30px;
+    width: 100%;
+    font-size: 50px;
+}
+.tab-button5{
+    margin-left: 80px;
+    width: 130px;
+    height: 60px;
+    font-size: 40px;
 }

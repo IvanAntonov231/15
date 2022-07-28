@@ -13,6 +13,85 @@
 <link rel="stylesheet" href="/css/main.css">
 <title>bootstrap</title>
 </head>
+<style>
+  .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+.grid1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+}
+.nav{
+    padding-left: 300px;
+}
+.accordion-button::after {
+display:inline-block;
+  width:30px;
+  height:30px;
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    #000;
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+.tab-button{
+    height: 50px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: black;
+    margin-left: 300px;
+    color: white;
+}
+.callback_form{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+}
+.callback{
+    margin-left: 30px;
+    width: 100%;
+    font-size: 50px;
+}
+.tab-button5{
+    margin-left: 80px;
+    width: 190px;
+    height: 60px;
+    font-size: 40px;
+}
+.cards{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    margin-left: 150px;
+}
+.card-img-top{
+    max-height: 166px
+}
+.btn-primary1{
+  margin-left: 1570px;
+}
+</style>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -44,10 +123,29 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-success" type="submit">Call us</button>
-          </form>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn btn-primary1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Call us
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, distinctio qui modi possimus totam numquam, ipsum accusantium minus sit maxime debitis, autem ratione expedita quia sapiente! Corporis quo alias laudantium!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Call us</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </nav>
@@ -113,7 +211,7 @@
     </button>
   </div>
 </div>
-<div class="container-fluid container-fluidy">
+<div class="container-fluid grid1">
   <div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
